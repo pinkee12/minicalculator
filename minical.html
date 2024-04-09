@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+        button{
+            margin-top: 20px;
+            margin-left:20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="stinputbox" placeholder="enter 1st Number">
+    <input type="text" name="" id="ndinputbox" placeholder="enter 2nd Number">
+    <br>
+    <button onclick="Add()">Add</button>
+    <button onclick="Substract()">Substract</button>
+    <button onclick="Multiply()">Multiply</button>
+    <button onclick="Divide()">Divide</button>
+    
+
+    
+
+    
+</body>
+</html>
+<script>
+    
+    function Add(){
+    var fst=document.getElementById("stinputbox")
+    var snd=document.getElementById("ndinputbox")
+    var trd=fst.value
+    var fort=snd.value
+        var total=parseInt(trd)+parseInt(fort)
+        alert(total)
+        console.log(total)
+        
+    }
+    function Substract(){
+    var fst=document.getElementById("stinputbox")
+    var snd=document.getElementById("ndinputbox")
+    var trd=fst.value
+    var fort=snd.value
+        var total=parseInt(trd)-parseInt(fort)
+        alert(total)
+        console.log(total)
+        
+    }
+    function Multiply(){
+    var fst=document.getElementById("stinputbox")
+    var snd=document.getElementById("ndinputbox")
+    var trd=fst.value
+    var fort=snd.value
+        var total=parseInt(trd)*parseInt(fort)
+        alert(total)
+        console.log(total)
+
+    }
+    function Divide(){
+    var fst=document.getElementById("stinputbox")
+    var snd=document.getElementById("ndinputbox")
+    var trd=fst.value
+    var fort=snd.value
+        var total=parseInt(trd)/(fort)
+        alert(total)
+        console.log(total)
+
+    }
+
+</script>
